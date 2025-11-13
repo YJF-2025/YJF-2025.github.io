@@ -3,92 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张明 - 医学影像研究学者</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>学术主页 - 王磊</title>
+    <style>
+        /* 内嵌CSS，避免外部文件依赖 */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { padding-top: 60px; background: #f8f9fa; color: #333; }
+        .navbar { position: fixed; top: 0; width: 100%; background: #2c3e50; padding: 15px 0; }
+        .navbar a { color: white; margin: 0 15px; text-decoration: none; }
+        .navbar a:hover { color: #3498db; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .section { margin: 50px 0; }
+        .profile-img { width: 200px; height: 200px; border-radius: 50%; margin: 20px 0; }
+        h1, h2 { color: #2c3e50; margin: 15px 0; }
+        .pub-item { margin: 10px 0; padding: 10px; background: white; border-radius: 5px; }
+        footer { text-align: center; padding: 20px; background: #2c3e50; color: white; margin-top: 50px; }
+    </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav id="navbar">
+    <!-- 导航条 -->
+    <div class="navbar">
         <div class="container">
-            <ul>
-                <li><a href="#home" class="active">首页</a></li>
-                <li><a href="#research">研究方向</a></li>
-                <li><a href="#publications">发表论文</a></li>
-                <li><a href="#contact">联系方式</a></li>
-            </ul>
+            <a href="#home">首页</a>
+            <a href="#about">关于我</a>
+            <a href="#research">研究方向</a>
+            <a href="#publications">论文</a>
+            <a href="#contact">联系方式</a>
         </div>
-    </nav>
+    </div>
 
-    <!-- 首页/个人信息 -->
-    <section id="home" class="section">
-        <div class="container">
-            <div class="profile">
-                <img src="profile.jpg" alt="个人照片" class="profile-img">
-                <div class="profile-info">
-                    <h1>张明</h1>
-                    <p class="title">医学影像与人工智能研究员</p>
-                    <p>专注于超声成像技术与疾病诊断的交叉研究，探索医学影像知识图谱在临床决策中的应用。</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-google"></i> Google Scholar</a>
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- 首页 -->
+    <div id="home" class="container section">
+        <h1>王磊 - 医学影像研究员</h1>
+        <img src="profile.jpg" alt="个人照片" class="profile-img">
+        <p>专注于X线成像技术与医学影像知识图谱研究</p>
+    </div>
+
+    <!-- 关于我 -->
+    <div id="about" class="container section">
+        <h2>关于我</h2>
+        <p>博士，主要研究X线成像设备优化、影像特征提取及知识图谱构建，发表论文10余篇，主持省部级项目2项。</p>
+    </div>
 
     <!-- 研究方向 -->
-    <section id="research" class="section">
-        <div class="container">
-            <h2>研究方向</h2>
-            <div class="research-items">
-                <div class="research-item">
-                    <i class="fas fa-heartbeat fa-2x"></i>
-                    <h3>超声成像定量分析</h3>
-                    <p>基于深度学习的超声图像病灶分割与特征提取，提高乳腺、甲状腺疾病的早期诊断精度。</p>
-                </div>
-                <div class="research-item">
-                    <i class="fas fa-project-diagram fa-2x"></i>
-                    <h3>医学影像知识图谱</h3>
-                    <p>构建超声影像-临床诊断关联知识图谱，支持疾病鉴别诊断的智能推理。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="research" class="container section">
+        <h2>研究方向</h2>
+        <ul>
+            <li>X线成像质量提升算法</li>
+            <li>胸部X线影像知识图谱（疾病-影像特征关联）</li>
+            <li>AI辅助X线影像诊断系统</li>
+        </ul>
+    </div>
 
-    <!-- 发表论文 -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2>发表论文</h2>
-            <div class="pub-filters">
-                <button class="filter-btn active" data-year="all">全部</button>
-                <button class="filter-btn" data-year="2023">2023</button>
-                <button class="filter-btn" data-year="2022">2022</button>
-            </div>
-            <div class="pub-list">
-                <div class="pub-item" data-year="2023">
-                    <p><strong>基于知识图谱的超声图像甲状腺结节良恶性鉴别研究</strong>，中华超声影像学杂志，2023</p>
-                </div>
-                <div class="pub-item" data-year="2022">
-                    <p><strong>深度学习在乳腺超声病灶分割中的应用进展</strong>，中国医学影像技术，2022</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- 论文 -->
+    <div id="publications" class="container section">
+        <h2>发表论文</h2>
+        <div class="pub-item">王磊, 等. X线影像知识图谱在肺炎诊断中的应用. 中华放射学杂志, 2023.</div>
+        <div class="pub-item">王磊, 等. 基于深度学习的胸部X线图像去噪算法. 中国医学影像技术, 2022.</div>
+    </div>
 
     <!-- 联系方式 -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>联系方式</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> zhangming@example.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> 北京市海淀区医学院路88号</p>
-            </div>
-        </div>
-    </section>
+    <div id="contact" class="container section">
+        <h2>联系方式</h2>
+        <p>邮箱：wanglei@example.com</p>
+        <p>主页链接：<a href="https://你的用户名.github.io">https://你的用户名.github.io</a></p>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2023 王磊学术主页 | 托管于GitHub Pages</p>
+    </footer>
+
+    <!-- 极简JS交互 -->
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>
