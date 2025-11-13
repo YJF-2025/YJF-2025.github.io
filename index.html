@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张明 - 医学影像研究学者</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#research">研究方向</a></li>
+                <li><a href="#publications">发表论文</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页/个人信息 -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="profile">
+                <img src="profile.jpg" alt="个人照片" class="profile-img">
+                <div class="profile-info">
+                    <h1>张明</h1>
+                    <p class="title">医学影像与人工智能研究员</p>
+                    <p>专注于超声成像技术与疾病诊断的交叉研究，探索医学影像知识图谱在临床决策中的应用。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-google"></i> Google Scholar</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究方向 -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2>研究方向</h2>
+            <div class="research-items">
+                <div class="research-item">
+                    <i class="fas fa-heartbeat fa-2x"></i>
+                    <h3>超声成像定量分析</h3>
+                    <p>基于深度学习的超声图像病灶分割与特征提取，提高乳腺、甲状腺疾病的早期诊断精度。</p>
+                </div>
+                <div class="research-item">
+                    <i class="fas fa-project-diagram fa-2x"></i>
+                    <h3>医学影像知识图谱</h3>
+                    <p>构建超声影像-临床诊断关联知识图谱，支持疾病鉴别诊断的智能推理。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发表论文 -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2>发表论文</h2>
+            <div class="pub-filters">
+                <button class="filter-btn active" data-year="all">全部</button>
+                <button class="filter-btn" data-year="2023">2023</button>
+                <button class="filter-btn" data-year="2022">2022</button>
+            </div>
+            <div class="pub-list">
+                <div class="pub-item" data-year="2023">
+                    <p><strong>基于知识图谱的超声图像甲状腺结节良恶性鉴别研究</strong>，中华超声影像学杂志，2023</p>
+                </div>
+                <div class="pub-item" data-year="2022">
+                    <p><strong>深度学习在乳腺超声病灶分割中的应用进展</strong>，中国医学影像技术，2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>联系方式</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> zhangming@example.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 北京市海淀区医学院路88号</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
